@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <section>    
+        <form action="" id="form">
+            {% csrf_token %}
+            <input type="text" name="title" id="title" class="new_task">
+            <button type="submit">add task</button>
+        </form>
+        <div id="list_view">
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'script/api.js' %}"></script>
+</body>
+</html> 
+
+

@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 60%;
+    height: 80vh;
+    overflow-y: scroll;
+    border: 1px solid black;
+    padding: 20px 40px;
+}
+section h1{
+    text-transform: capitalize;
+    text-align: center;
+}
+section form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+section form input{
+    width: 80%;
+    padding: 15px;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+section form button{
+    width: 18%;
+    padding: 15px;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.flex{
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 0px;   
+}
+section>div:nth-of-type(1) p{
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bold;
+}
+section>div:nth-of-type(1) button{
+    text-transform: capitalize;
+    font-size: 15px;
+    text-decoration: none;
+}
+section>div:nth-of-type(1) button:nth-of-type(1){
+    margin-right: 20px;
+}
+section>div:nth-of-type(1) button:nth-of-type(2){
+    margin-left: 20px;
+}
